@@ -1,0 +1,195 @@
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+          %meta{:content => "", :name => "description"}
+            %meta{:content => "", :name => "author"}
+              %title Resume
+              %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic", :rel => "stylesheet", :type => "text/css"}
+              %script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+              %script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+  %body
+    %nav.navbar.navbar-default.navbar-fixed-top.topnav{:role => "navigation"}
+      .container.topnav 
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+            
+          %a.navbar-brand.topnav Resume
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "#about"} Educational Qualification
+            %li
+              %a{:href => "#contact"} Experience
+            %li
+              %a{:href => "#personal"} Contact
+    %a{:name => "about"}
+    .intro-header
+      .container
+        .row
+          .col-lg-12
+            .intro-message
+              %h1 Madhuri  Aware
+              %h3 B.E. Information Technology
+              %hr.intro-divider
+               
+   
+    .content-section-a
+      .container
+        .row.center
+          %h2
+            Educational qualification
+        %br
+        %br
+        .row
+          #myCarousel.carousel.slide{"data-ride" => "carousel"}
+            %ol.carousel-indicators{:style=>"color:black;"}
+              %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+              %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+              %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+            / Wrapper for slides
+            .carousel-inner.center{:role => "listbox"}
+              .item.active
+                .col-lg-6.col-lg-offset-3.col-xs-12
+                  %h4.center
+                    10th  K. J.  Meheta school
+              .item
+                %h4.center
+                  Diploma in Information Technology
+              .item
+                %h4.center
+                  Bachelor of Engineering in Information Technology
+          
+  
+    %a{:name => "main"}
+      .content-section-a
+        .container
+          .row
+            .col-lg-5.col-sm-6
+              %hr.section-heading-spacer
+                .clearfix
+                %h2.section-heading
+                  Languages
+                %p.lead
+                  HTML
+                  %br
+                  CSS
+                  %br
+                  JAVASCRIPT
+                  %br
+                  RUBY ON RAILS
+                  %br
+                  C
+                  %br
+                  C++
+                  %br
+                  JAVA
+            .col-lg-5.col-lg-offset-2.col-sm-6
+              = image_tag("OzMgR.png", :class=>"img img-responsive")
+       
+    %a{:name => "contact"}
+    .banner
+      .container
+        .row
+          .col-lg-2
+            %h2 Experience
+          .col-lg-3
+            %ul.list-inline.banner-social-buttons
+              %br
+              Birdvision consulting pvt ltd.  
+              %br
+              As Jr.Technical analyst 
+            
+%nav.navbar.navbar-default.navbar-fixed-top.topnav{:role => "navigation"}
+  .container.topnav
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.topnav{:href => "#"}Resume[Madhuri Aware]
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#about"} Educational Qualification
+        %li
+          %a{:href => "#main"} Skills
+        %li
+          %a{:href => "#contact"} Projects
+        %li
+          %a{:href => "#personal"} Personal Details
+   
+        
+  
+%a{:name => "services"}
+.content-section-a
+  .exp
+    .container
+      .row
+        .col-lg-5.col-sm-6
+          %hr.section-heading-spacer
+            .clearfix
+            %h2.section-heading 
+              Worked on projects:
+              %h3
+                Adzfone : www.adzfone.com                  
+                %br
+                %br
+                Contest :www.cemplay.com
+                %br
+                %br
+                Swepstake :www.cemplay.com
+             
+       
+           
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          = image_tag("adzfone.png", :class=>"img img-responsive")
+              
+     
+              
+          
+  %a{:name => "personal"}            
+  .content-section-b
+    .container
+      .row
+        .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          %hr.section-heading-spacer
+            .clearfix
+            %h4.section-heading
+              Address-Geeta goda park flat no -4,nashik
+              %br
+              %br
+              Birth Date- 12 Jan 1993
+              %br
+              %br
+              Contact number-9960835307
+              %br
+              %br
+              Mail-id - madhuriaware99@gmail.com
+        .col-lg-5.col-sm-pull-6.col-sm-6
+          = image_tag("cemplay.png", :class=>"img img-responsive")         
+    
+
+%footer
+  .container
+    .row
+      .col-lg-12
+        %ul.list-inline
+          %li
+            %a{:href => "#"} Home
+          %li.footer-menu-divider &sdot;
+          %li
+            %a{:href => "#about"} About
+          %li.footer-menu-divider &sdot;
+      
+          %li
+            %a{:href => "#personal"} Contact
+        %p.copyright.text-muted.small Copyright &copy; Your Company 2017. All Rights Reserved
